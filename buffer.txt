@@ -1,0 +1,244 @@
+
+<!-------------------------------------------------------------------------------------------->	
+<!-------------------------------------------------------------------------------------------->
+<!----  10 МИНУТНЫЕ ЗНАЧЕНИЯ------------------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------->
+	<form action="http://<#ServerName>/cgi-bin/<#ScriptName>/diagram_step2" method=get>
+	<INPUT TYPE=HIDDEN NAME=SQLFILENAME VALUE="date_time"> 
+	<TABLE cellSpacing=0 cellPadding=15 width="100%" border=1>
+	<TBODY>
+	<TR>
+	<TD>
+
+		<p align="left">      
+		<!Таблица (1.11) --------------------------------------------------------------->	
+		<TABLE borderColor=#7894af cellSpacing=0 cellPadding=4 border=1>
+	       	<TBODY>
+	       	<TR>
+	          	<TD bgColor=#7894af>
+			<B>
+			<FONT face=Arial color=#ffffff size=2>Часовые значения расчётных параметров&nbsp;</FONT>
+			</B>
+			</TD>
+		</TR>
+		</TBODY>
+		</TABLE>
+		<!-------------------------------------------------------------->	
+
+		<!Таблица (1.12.1) ------------------------------------------------------------------------------>
+		<!Таблица для рамки ----------------------------------------------------------------------------->
+		<TABLE borderColor=#7894af cellSpacing=0 cellPadding=0 width="100%" bgColor=#efefef border=1>
+		<TR>
+		<TD>
+		<TABLE borderColor=#7894af cellSpacing=0 cellPadding=0 width="100%" bgColor=#efefef border=0>
+	        <TBODY>
+	       	<TR>
+
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=10min_m1 VALUE=yes><#_10min_m2_name><BR>  
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#_10min_m1_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=10min_m2 VALUE=yes><#_10min_m2_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#_10min_m2_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=10min_m3 VALUE=yes><#_10min_m3_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#_10min_m3_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=10min_m4 VALUE=yes><#_10min_m4_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#_10min_m4_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=razn_yt1 VALUE=yes><#razn_yt1_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#razn_yt1_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>
+			<INPUT TYPE=CHECKBOX NAME=razn_yt2 VALUE=yes><#razn_yt2_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#razn_yt2_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=teplo1 VALUE=yes><#teplo1_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#teplo1_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=teplo2 VALUE=yes><#teplo2_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#teplo2_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=teplo3 VALUE=yes><#teplo3_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#teplo3_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=teplo4 VALUE=yes><#teplo4_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#teplo4_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=razn_en1 VALUE=yes><#razn_en1_name><BR>
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#razn_en1_extended>			
+			</font>
+			</p>
+			</td>
+	       	</TR>
+	       	<TR>
+			<td>
+			<p align="left">
+			<FONT face=Arial color="Red" size=3>		
+			<INPUT TYPE=CHECKBOX NAME=razn_en2 VALUE=yes><#razn_en2_name><BR> 
+			</font>	
+			</td>		
+
+			<td>
+			<p align="center">
+			<FONT face=Arial color="Green" size=3>
+			<#razn_en2_extended>
+			</font>
+			</p>
+			</td>
+	       	</TR>
+		</TABLE>
+
+	</TD>
+	<TD>
+		<p align="center">
+<!input type=image src="http://<#ServerName><#ImageDirectory>enter.gif" border=0 ALT="Нажмите для продолжения">
+		<INPUT TYPE=SUBMIT VALUE="Продолжить..."> 
+		</p>
+	</TD>
+	</TR>
+	</TABLE>
+
+	</TD>
+	</TR>
+	</TABLE>
+	</FORM>

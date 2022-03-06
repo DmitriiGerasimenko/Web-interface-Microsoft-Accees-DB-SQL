@@ -1,0 +1,497 @@
+[spt961]
+
+
+ServerName= 192.168.70.18
+;ServerName= asutpb
+
+DiagramImageDirectory= "C:/WWW/ISSPT961/IMAGE/"
+;"C:\ISSPT961\CGI\V20000\FORM\IMG\"
+
+
+ImageDirectory= "/ISSPT961/CGI/V20000/FORM/IMG/"
+;"/CGI/V20000/FORM/IMG/"
+;"/SPT961/SITE/FORM/IMG/"
+
+; Месторасположение баз данных
+;
+
+DataBaseDirectory = "C:\Logika\Data\"
+
+
+; Имя базы данных текущего месяца.
+;
+CurrentDatabaseName= "spt961.mdb" 
+
+
+; Текущая база данных
+;
+
+DefaultDatabase = "SPT961.MDB"
+
+HtmlDirectory= "C:\WWW\ISSPT961\CGI\V20000\FORM\"
+;"C:\WWW\SPT961\SITE\FORM\"
+;
+ReportDirectory= "C:\WWW\ISSPT961\CGI\V20000\FORM\"
+;"C:\WWW\SPT961\SITE\FORM\" 
+;
+;C:\WWW\SPT961\SITE\WEBCGI\REPORT\
+
+Diagrams = 1
+OutputDiagrams = 1
+FormatFloat= "0.0"
+
+
+MaxRows = 2000
+
+
+admin = ???@karelia.ru
+
+;ReportBorder= 0
+;password= ""
+
+
+
+;-------------------------------------------------------------------------------------------------
+; общие параметры для всех таблиц
+;-------------------------------------------------------------------------------------------------
+
+
+; ширина диаграммы
+;
+Width= 800
+
+; высота диаграммы
+;
+Height= 1000
+
+
+;-------------------------------------------------------------------------------------------------
+; Цвета фонов в графических фалах
+;
+; Black = 0x0;
+; Maroon = 0x80;
+; Green = 0x8000;
+; Olive = 0x8080;
+; Navy = 0x800000;
+; Purple = 0x800080;
+; Teal = 0x808000;
+; Gray = 0x808080;
+; Silver = 0xc0c0c0;
+; Red = 0xff;
+; Lime = 0xff00;
+; Yellow = 0xffff;
+; Blue = 0xff0000;
+; Fuchsia = 0xff00ff;
+; Aqua = 0xffff00;
+; LtGray = 0xc0c0c0;
+; DkGray = 0x808080;
+; White = 0xffffff;
+;-------------------------------------------------------------------------------------------------
+
+CopyrightInfo= "Петрозаводская ТЭЦ, пограничная, 25"
+
+; Метод расчёта высоты диаграммы
+; 
+; enum TDiagramSizeStyle {wsRecordCount, wsDateTime, wsFixed };
+;
+; 0,1,2
+
+HeightStyle= 0
+
+; шаг диаграммы. пиксели/одно значение. 
+; Нужна, если  HeightStyle= 0 [wsRecordCount]
+PixelsInData= 5
+
+
+; Высота листа А4 в пикселях. Зависит от принтера
+;
+MaxPixelsInPageHeight= 800
+
+; Ширина листа А4 в пикселях. Зависит от принтера
+;
+MaxPixelsInPageWidth= 700
+
+; Максимальная возможная высота диаграмы в пикселях
+;
+MaxHeight= 5000
+
+; Минимальная возможная высота диаграмы в пикселях
+;
+MinHeight= 800
+
+; Максимальная возможная ширина диаграмы в пикселях
+;
+MaxWidth= 1000
+
+; Минимальная возможная ширина диаграмы в пикселях
+;
+MinWidth= 600
+
+; 0 или 1
+;
+AutoMax= 0
+
+; 0 или 1
+;
+AutoMin= 0
+
+;
+;
+Max= 0
+Min= 100
+
+
+; ширина пера, рисующего диаграмму
+;
+PenWidth= 3
+
+;
+; цвета
+;
+
+BackgroundInformation= 0xffffff
+BackgroundLeft= 0xffffff
+BackgroundRight= 0xffffff
+BackgroundTop= 0xffffff
+BackgroundBottom= 0xffffff
+BackgroundGraph= 0xffffff
+BackgroundPen= 0xffffff
+
+ForegroundInformation= 0x0
+ForegroundLeft= 0x0
+ForegroundRight= 0x0
+ForegroundTop= 0x0
+ForegroundBottom= 0x0
+ForegroundGraph= 0x0
+ForegroundPen= 0xff
+ForegroundBorder= 0x0
+
+;FontInformation= 
+;FontDateTime= 
+;FontRange= 
+
+; Прямоугольное окаймление диаграммы
+; 0 - Да 
+; 1 - Нет
+Border= 0
+
+;-------------------------------------------------------------------------------------------------
+
+truba1_d@name= "Измеренное значение давления (прямая Город)"
+truba1_d.extended= "Кгс/см2"
+truba1_d.min= 7
+truba1_d.max= 12
+
+truba2_d.name= "Измеренное значение давления (обратка Город)"
+truba2_d.extended= "Кгс/см2"
+truba2_d.min= 0
+truba2_d.max= 5
+
+truba3_d.name= "Измеренное значение давления (прямая Древлянка)"
+truba3_d.extended= "Кгс/см2"
+truba3_d.min= 7
+truba3_d.max= 12
+
+truba4_d.name= "Измеренное значение давления (обратка Древлянка)"
+truba4_d.extended= "Kгс/см2"
+truba4_d.min= 0
+truba4_d.max= 5
+;-------------------------------------------------------------------------------------------------
+truba1_f.name= "Массовый расход теплоносителя (прямая Город)"
+truba1_f.extended= "Т"
+truba1_f.min = 7
+truba1_f.max = 12
+
+truba2_f.name= "Массовый расход теплоносителя (обратка Город)"
+truba2_f.extended= "Т"
+truba2_f.min= 0
+truba2_f.max= 5
+
+truba3_f.name= "Массовый расход теплоносителя (прямая Древлянка)"
+truba3_f.extended= "T"
+truba3_f.min= 7
+truba3_f.max= 12
+
+truba4_f.name= "Массовый расход теплоносителя (обратка Древлянка)"
+truba4_f.extended= "T"
+truba4_f.min= 0
+truba4_f.max= 5
+;-------------------------------------------------------------------------------------------------
+truba1_t.name= "Измеренное значение температуры (прямая Город)"
+truba1_t.extended= "C"
+truba1_t.min= 40
+truba1_t.max= 90
+
+truba2_t.name= "Измеренное значение температуры (обратка Город)(C)"
+truba2_t.extended=
+truba2_t.min= 30
+truba2_t.max= 80
+
+truba3_t.name= "Измеренное значение температуры (прямая Древлянка)"
+truba3_t.extended= "C"
+truba3_t.min= 40
+truba3_t.max= 90
+
+truba4_t.name= "Измеренное значение температуры (обратка Древлянка)"
+truba4_t.extended= "C"
+truba4_t.min= 30
+truba4_t.max= 80
+
+truba5_t.name= "Измеряемая температура холодной воды (ГорВодоканал)"
+truba5_t.extended= "C"
+truba5_t.min= 0
+truba5_t.max= 20
+;-------------------------------------------------------------------------------------------------
+10min_m1.name= "Масса теплоносителя нарастающим итогом (прямая Город)()"
+10min_m1.extended=
+10min_m1.min = 0
+10min_m1.max = 20
+
+10min_m1.name= "Масса теплоносителя нарастающим итогом (прямая Город)"
+10min_m1.extended= "Т"
+10min_m1.min= 0
+10min_m1.max= 20
+
+10min_m2.name= "Масса теплоносителя нарастающим итогом (обратка Город)"
+10min_m2.extended= "Т"
+10min_m2.min= 0
+10min_m2.max= 20
+
+10min_m3.name= "Масса теплоносителя нарастающим итогом (прямая Древлянка)"
+10min_m3.extended= "Т"
+10min_m3.min= 0
+10min_m3.max= 20
+
+10min_m4.name= "Масса теплоносителя нарастающим итогом (обратка Древлянка)"
+10min_m4.extended= "Т"
+10min_m4.min= 0
+10min_m4.max= 20
+;-------------------------------------------------------------------------------------------------
+razn_yt1.name= "Масса производительных и непроизводительных утечек по магистрали нарастающим итогом (Город)"
+razn_yt1.extended= "Т"
+razn_yt1.min= 0
+razn_yt1.max= 20
+
+razn_yt2.name= "Масса производительных и непроизводительных утечек по магистрали нарастающим итогом (Древлянка)"
+razn_yt2.extended= "Т"
+razn_yt2.min= 0
+razn_yt2.max= 20
+
+teplo1.name= "Тепловая энергия нарастающим итогом (прямая Город)"
+teplo1.extended= "ГКал"
+teplo1.min= 0
+teplo1.max= 20
+
+teplo2.name= "Тепловая энергия нарастающим итогом (обратка Город)"
+teplo2.extended= "ГКал"
+teplo2.min= 0
+teplo2.max= 20
+
+teplo3.name= "Тепловая энергия нарастающим итогом (прямая Древлянка)"
+teplo3.extended= "ГКал"
+teplo3.min= 0
+teplo3.max= 20
+
+teplo4.name= "Тепловая энергия нарастающим итогом (обратка Древлянка)"
+teplo4.extended= "ГКал"
+teplo4.min= 0
+teplo4.max= 20
+
+razn_en1.name= "Потребляемая (отпускаемая) тепловая энергия по магистрали нарастающим итогом"
+razn_en1.extended= "ГКал"
+razn_en1.min= 0
+razn_en1.max= 20
+
+razn_en2.name= "Потребляемая (отпускаемая) тепловая энергия по магистрали нарастающим итогом (ГКал)"
+razn_en2.extended=
+razn_en2.min= 0
+razn_en2.max= 20
+;-------------------------------------------------------------------------------------------------
+spt_arm1.name= "Масса теплоносителя за 1 час (прямая Город)"
+spt_arm1.extended= "Т"
+spt_arm1.min= 0
+spt_arm1.max= 20
+
+spt_arm2.name= "Масса теплоносителя за 1 час (обратка Город)"
+spt_arm2.extended= "Т"
+spt_arm2.min= 0
+spt_arm2.max= 20
+
+spt_arm3.name= "Масса теплоносителя за 1 час (прямая Древлянка)"
+spt_arm3.extended= "Т"
+spt_arm3.min= 0
+spt_arm3.max= 20
+
+spt_arm4.name= "Масса теплоносителя за 1 час (обратка Древлянка)"
+spt_arm4.extended= "Т"
+spt_arm4.min= 0
+spt_arm4.max= 20
+
+spt_ym1.name= "Масса утечек по магистрали за 1час (Город)"
+spt_ym1.extended= "Т"
+spt_ym1.min = 0
+spt_ym1.max = 20
+
+spt_ym2.name= "Масса утечек по магистрали за 1час (Древлянка)"
+spt_ym2.extended= "Т"
+spt_ym2.min= 0
+spt_ym2.max= 20
+
+spt_art1.name= "Тепловая энергия  за 1 час (прямая Город)"
+spt_art1.extended= "ГКал"
+spt_art1.min= 0
+spt_art1.max= 20
+
+spt_art2.name= "Тепловая энергия  за 1 час (обратка Город)"
+spt_art2.extended= "ГКал"
+spt_art2.min= 0
+spt_art2.max= 20
+
+spt_art3.name= "Тепловая энергия  за 1 час (прямая Древлянка)"
+spt_art3.extended= "ГКал"
+spt_art3.min = 0
+spt_art3.max = 20
+
+spt_art4.GraphName= "Тепловая энергия  за 1 час (обратка Древлянка)"
+spt_art4.Extended= "ГКал"
+spt_art4.Min= 0
+spt_art4.Max= 20
+
+spt_yw1.name= "Потребляемая тепловая энергия по магистрали (Город)"
+spt_yw1.extended= "ГКал"
+spt_yw1.min= 0
+spt_yw1.max= 20
+
+spt_yw2.name= "Потребляемая тепловая энергия по магистрали (Древлянка)"
+spt_yw2.extended= "ГКал"
+spt_yw2.min= 0
+spt_yw2.max= 20
+
+spt_at1.name= "Расчетное значение температуры за 1 час (прямая Город)"
+spt_at1.extended= "C"
+spt_at1.min= 0
+spt_at1.max= 20
+
+spt_at2.name= "Расчетное значение температуры за 1 час (обратка Город)"
+spt_at2.extended= "C"
+spt_at2.min= 0
+spt_at2.max= 20
+
+spt_at3.name= "Расчетное значение температуры за 1 час (прямая Древлянка)"
+spt_at3.extended= "C"
+spt_at3.min= 0
+spt_at3.max= 20
+
+spt_at4.name= "Расчетное значение температуры за 1 час (обратка Древлянка)"
+spt_at4.extended= "C"
+spt_at4.min= 0
+spt_at4.max= 20
+;-------------------------------------------------------------------------------------------------
+spt_arm1.name= "Массовый расход теплоносителя (прямая Город)"
+spt_arm1.extended= "T"
+spt_arm1.min= 0
+spt_arm1.max= 2000
+
+spt_arm2.name= "Массовый расход теплоносителя (обратка Город)"
+spt_arm2.extended= "T"
+spt_arm2.min= 0
+spt_arm2.max= 2000
+
+spt_arm3.name= "Массовый расход теплоносителя (прямая Древлянка)"
+spt_arm3.extended= "T"
+spt_arm3.min= 0
+spt_arm3.max= 2000
+
+spt_arm4.name= "Массовый расход теплоносителя (обратка Древлянка)"
+spt_arm4.extended= "T"
+spt_arm4.min= 0
+spt_arm4.max= 2000
+;------------------------------------------------------------------------------------------------
+spt_asm1.name= "Масса теплоносителя за 1 сутки (прямая Город)"
+spt_asm1.extended= "T"
+spt_asm1.min= 0
+spt_asm1.max= 2000
+
+spt_asm2.name= "Масса теплоносителя за 1 сутки (обратка Город)"
+spt_asm2.extended= "Т"
+spt_asm2.min= 0
+spt_asm2.max= 2000
+
+spt_asm3.name= "Масса теплоносителя за 1 сутки (прямая Древлянка)"
+spt_asm3.extended= "Т"
+spt_asm3.min= 0
+spt_asm3.max= 2000
+
+spt_asm4.name= "Масса теплоносителя за 1 сутки (обратка Древлянка)"
+spt_asm4.extended= "Т"
+spt_asm4.min= 0
+spt_asm4.max= 2000
+
+spt_ysm1.name= "Масса утечек по магистрали за 1 сутки (Город)"
+spt_ysm1.extended= "Т"
+spt_ysm1.min= 0
+spt_ysm1.max= 2000
+
+spt_ysm2.name= "Масса утечек по магистрали за 1 сутки (Древлянка)"
+spt_ysm2.extended= "Т"
+spt_ysm2.min= 0
+spt_ysm2.max= 2000
+
+spt_ast1.name= "Тепловая энергия за 1 сутки (прямая Город)"
+spt_ast1.extended= "ГКал"
+spt_ast1.min= 0
+spt_ast1.max= 2000
+
+spt_ast2.name= "Тепловая энергия за 1 сутки (обратка Город)"
+spt_ast2.extended= "ГКал"
+spt_ast2.min= 0
+spt_ast2.max= 2000
+
+spt_ast3.name= "Тепловая энергия за 1 сутки (прямая Древлянка)"
+spt_ast3.extended= "ГКал"
+spt_ast3.min= 0
+spt_ast3.max= 2000
+
+spt_ast4.name= "Тепловая энергия за 1 сутки (обратка Древлянка)"
+spt_ast4.extended= "ГКал"
+spt_ast4.min= 0
+spt_ast4.max= 2000
+
+spt_ysw1.name= "Потребляемая тепловая энергия по магистрали (Город)"
+spt_ysw1.extended= "ГКал"
+spt_ysw1.min= 0
+spt_ysw1.max= 2000
+
+spt_ysw2.name= "Потребляемая тепловая энергия по магистрали (Древлянка)"
+spt_ysw2.extended= "ГКал"
+spt_ysw2.min= 0
+spt_ysw2.max= 2000
+
+spt_st1.name= "Расчетное значение температуры за 1 сутки (прямая Город)"
+spt_st1.extended= "C"
+spt_st1.min= 0
+spt_st1.max= 2000
+
+spt_st2.GraphName= "Расчетное значение температуры за 1 сутки (обратка Город)"
+spt_st2.Extended= "C"
+spt_st2.Min= 0
+spt_st2.Max= 2000
+
+spt_st3.name= "Расчетное значение температуры за 1 сутки (прямая Древлянка)"
+spt_st3.extended= "C"
+spt_st3.min= 0
+spt_st3.max= 2000
+
+spt_st4.name= "Расчетное значение температуры за 1 сутки (обратка Древлянка)"
+spt_st4.extended= "C"
+spt_st4.min= 0
+spt_st4.max= 2000
+
+spt_st5.name= "Расчетное значение температуры холодной воды (городской водоканал)"
+spt_st5.extended= "C"
+spt_st5.min= 0
+spt_st5.max= 2000
+
+;------------------------------------------------------------------------------------------------
+
+; END
